@@ -1,0 +1,28 @@
+@import 'spacing';
+@import 'colors';
+@import 'shapes';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: "h" "m" "f";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 50px;
+}
+//HEADER
+header{
+    grid-area: h;
+    & h1 {
+        text-decoration: underline;
+    }
+}
+main{
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+}

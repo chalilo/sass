@@ -1,0 +1,12 @@
+.box_small{
+    width: calc((100% - 225px - (20px*4))/4);
+    height: calc(100% - 20px);
+    border-radius: 10px;
+    border: solid 10px #fff;
+}
+@media screen and (max-width: 650px) {
+    .box_small{
+        width: calc(100% - 20px);
+        height: 100px;
+    }
+}

@@ -1,0 +1,19 @@
+$war_blue: #36454f;
+
+@mixin war_palette {
+    background-color: $war_blue;
+    color: white;
+}
+header{
+    @include war_palette;
+}
+main{
+    background-color: #000;
+    color: #fff;
+    .box_small{
+        background-color: #000;
+    }
+}
+footer{
+    @include war_palette;
+}
